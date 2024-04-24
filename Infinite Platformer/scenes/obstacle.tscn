@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmbj4h2nbj2fi"]
+
+[ext_resource type="Script" path="res://scripts/obstacle.gd" id="1_dd50b"]
+[ext_resource type="Texture2D" uid="uid://bghdq7pnirojw" path="res://assets/textures/other/Boxes/Box1/Idle.png" id="1_otqu7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_24x11"]
+
+[node name="Obstacle" type="Area2D"]
+script = ExtResource("1_dd50b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_24x11")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_otqu7")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

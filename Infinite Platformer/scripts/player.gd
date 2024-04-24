@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name Player
 
 @export var jump_velocity = 400.0
 
@@ -16,3 +17,6 @@ func _physics_process(delta):
 		velocity.y -= jump_velocity
 
 	move_and_slide()
+
+func die():
+	queue_free()
