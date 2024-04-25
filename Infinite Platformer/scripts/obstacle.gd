@@ -1,5 +1,5 @@
 extends Area2D
-
+class_name Obstacle
 @export var speed = 80
 
 # Called when the node enters the scene tree for the first time.

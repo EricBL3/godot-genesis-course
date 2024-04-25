@@ -14,7 +14,7 @@ size = Vector2(162, 41)
 process_mode = 3
 script = ExtResource("1_5y77f")
 
-[node name="ObstacleContainer" type="Node" parent="."]
+[node name="SpawnerContainer" type="Node" parent="."]
 
 [node name="Player" parent="." instance=ExtResource("1_ehipd")]
 position = Vector2(75, 213)
